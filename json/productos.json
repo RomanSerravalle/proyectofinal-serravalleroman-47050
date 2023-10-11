@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "NVIDIA RTX 2070",
+    "precio": 180000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "rtx2070.jpg",
+    "specs": "8GB VRAM - Memoria GDDR6 - Frecuencia de 1410 MHz"
+  },
+  {
+    "id": 2,
+    "nombre": "NVIDIA GTX 1650 Super",
+    "precio": 135000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "nvidia-1650.png",
+    "specs": "4GB VRAM - Memoria GDDR6 - Frecuencia de 1740 MHz"
+  },
+  {
+    "id": 3,
+    "nombre": "NVIDIA RTX 4080",
+    "precio": 1500000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "nvidia-4080.png",
+    "specs": "16GB VRAM - Memoria GDDR6X - Frecuencia de 2510 MHz"
+  },
+  {
+    "id": 4,
+    "nombre": "AMD RX 6600 XT",
+    "precio": 300000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "rx6600.png",
+    "specs": "8GB VRAM - Memoria GDDR6 - Frecuencia de 2359 MHz"
+  },
+  {
+    "id": 5,
+    "nombre": "AMD RX 580",
+    "precio": 210000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "rx-580.png",
+    "specs": "8GB VRAM - Memoria GDDR5 - Frecuencia de 1257 MHz"
+  },
+  {
+    "id": 6,
+    "nombre": "AMD RX 7900 XT",
+    "precio": 1350000,
+    "categoria": "Tarjeta gráfica",
+    "imagen": "rx7900.png",
+    "specs": "20GB VRAM - Memoria GDDR6 - Frecuencia de 2400 MHz"
+  },
+  {
+    "id": 7,
+    "nombre": "Intel i7 7700",
+    "precio": 100000,
+    "categoria": "CPU",
+    "imagen": "i7-7700.png",
+    "specs": "4 núcleos - 8 hilos - Hasta 4.20 GHz de frecuencia"
+  },
+  {
+    "id": 8,
+    "nombre": "Intel i9 13900k",
+    "precio": 985000,
+    "categoria": "CPU",
+    "imagen": "i9-13900k.png",
+    "specs": "24 núcleos - 32 hilos - Hasta 5.80 GHz de frecuencia"
+  },
+  {
+    "id": 9,
+    "nombre": "AMD Ryzen 5 7600",
+    "precio": 150000,
+    "categoria": "CPU",
+    "imagen": "amd-ryzen5.png",
+    "specs": "6 núcleos - 12 hilos - Hasta 5.10 GHz de frecuencia"
+  },
+  {
+    "id": 10,
+    "nombre": "AMD Ryzen 9 7950X",
+    "precio": 770000,
+    "categoria": "CPU",
+    "imagen": "amd-ryzen9.png",
+    "specs": "16 núcleos - 32 hilos - Hasta 4.5 GHz de frecuencia"
+  },
+  {
+    "id": 11,
+    "nombre": "RAM Corsair DDR4 8GB",
+    "precio": 25000,
+    "categoria": "Memoria RAM",
+    "imagen": "ram-corsair.png",
+    "specs": "Memoria VENGEANCE® LPX - 8GB RAM DDR4- 2400MHz"
+  },
+  {
+    "id": 12,
+    "nombre": "RAM Patriot DDR4 8GB",
+    "precio": 30000,
+    "categoria": "Memoria RAM",
+    "imagen": "ram-viper.png",
+    "specs": "Memoria PATRIOT® VIPER STEEL - 8GB RAM DDR4 - 3200MHz"
+  }
+]

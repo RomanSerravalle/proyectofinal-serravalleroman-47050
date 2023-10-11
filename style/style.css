@@ -1,0 +1,703 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap";
+
+/*MOVILES*/
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-weight: bolder;
+    animation: animColor 2s linear infinite;
+  }
+
+  @keyframes animColor {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      color: #7decc7;
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  h2 {
+    font-size: 7vw;
+  }
+
+  h3 {
+    padding: 20px;
+    font-weight: bolder;
+  }
+
+  span {
+    color: #7decc7;
+  }
+
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navBar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .navBar img {
+    height: 15%;
+    width: 15%;
+  }
+
+  .navBar p {
+    position: absolute;
+    background: red;
+  }
+
+  .carrito {
+    margin: 0px 20px 0px 20px;
+    background-color: #0be29a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    transition: all 0.2s;
+  }
+
+  .carrito img {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: px;
+    width: 110%;
+    height: 85%;
+  }
+
+  .carrito:link {
+    background-color: #0be29a;
+    box-shadow: none;
+  }
+
+  .carrito:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .productoComprado {
+    background: linear-gradient(90deg, #00b377 0%, #48ffc2 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #7decc7;
+    color: black;
+  }
+
+  .productoQuitado {
+    background: linear-gradient(90deg, #b90000 0%, #ff4646 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #8d0000;
+    color: black;
+  }
+
+  .cantidadProductos {
+    font-weight: bolder;
+  }
+
+  .cantidadBoton {
+    font-size: 13px;
+    position: absolute;
+    color: white;
+    padding: 0px 6px 0px 6px;
+    border-radius: 8px;
+    background: rgb(83, 83, 83);
+  }
+
+  .offcanvas {
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .btnQuitar {
+    margin: 20px;
+    transition: all 0.2s;
+  }
+
+  .btnQuitar:hover {
+    scale: 1.05;
+  }
+
+  .alertComprar {
+    color: white;
+    padding: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .btnAgregar {
+    font-size: 4vw;
+  }
+
+  .productoCarrito {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 25px;
+    border: dashed #929292;
+  }
+
+  #inputBuscar {
+    width: 25%;
+    padding: 9px;
+  }
+
+  .card {
+    width: calc(80% - 10px);
+    margin: 10px;
+    padding: 15px;
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    border: 1px solid #0be29a;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  button {
+    background-color: #0be29a;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .precio {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 5vw;
+    border-radius: 10px;
+    border: 2px solid rgb(127, 255, 212, 0.2);
+  }
+
+  .categoria {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 5vw;
+  }
+
+  .specsProducto {
+    font-size: 4vw;
+  }
+}
+
+/*TABLETS*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-weight: bolder;
+    animation: animColor 2s linear infinite;
+  }
+
+  @keyframes animColor {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      color: #7decc7;
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  h3 {
+    padding: 20px;
+    font-weight: bolder;
+  }
+
+  span {
+    color: #7decc7;
+  }
+
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navBar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .navBar img {
+    height: 15%;
+    width: 15%;
+  }
+
+  .navBar p {
+    position: absolute;
+    background: red;
+  }
+
+  .carrito {
+    margin: 0px 20px 0px 20px;
+    background-color: #0be29a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    transition: all 0.2s;
+  }
+
+  .carrito img {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: px;
+    width: 110%;
+    height: 85%;
+  }
+
+  .carrito:link {
+    background-color: #0be29a;
+    box-shadow: none;
+  }
+
+  .carrito:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .productoComprado {
+    background: linear-gradient(90deg, #00b377 0%, #48ffc2 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #7decc7;
+    color: black;
+  }
+
+  .productoQuitado {
+    background: linear-gradient(90deg, #b90000 0%, #ff4646 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #8d0000;
+    color: black;
+  }
+
+  .cantidadProductos {
+    font-weight: bolder;
+  }
+
+  .cantidadBoton {
+    font-size: 13px;
+    position: absolute;
+    color: white;
+    padding: 0px 6px 0px 6px;
+    border-radius: 8px;
+    background: rgb(83, 83, 83);
+  }
+
+  .offcanvas {
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .btnQuitar {
+    margin: 20px;
+    transition: all 0.2s;
+  }
+
+  .btnQuitar:hover {
+    scale: 1.05;
+  }
+
+  .alertComprar {
+    color: white;
+    padding: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .productoCarrito {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 25px;
+    border: dashed #929292;
+  }
+
+  #inputBuscar {
+    width: 25%;
+    padding: 9px;
+  }
+
+  .card {
+    width: calc(40% - 10px);
+    margin: 10px;
+    padding: 15px;
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    border: 1px solid #0be29a;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  button {
+    background-color: #0be29a;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .precio {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid rgb(127, 255, 212, 0.2);
+  }
+
+  .categoria {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 20px;
+  }
+
+  .specsProducto {
+    font-size: 18px;
+  }
+}
+
+/*ESCRITORIO*/
+@media screen and (min-width: 1025px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-weight: bolder;
+    animation: animColor 2s linear infinite;
+  }
+
+  @keyframes animColor {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      color: #7decc7;
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  h2 {
+    font-size: 1.3vw;
+  }
+
+  h3 {
+    padding: 20px;
+    font-weight: bolder;
+  }
+
+  span {
+    color: #7decc7;
+  }
+
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navBar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .navBar img {
+    height: 15%;
+    width: 15%;
+  }
+
+  .navBar p {
+    position: absolute;
+    background: red;
+  }
+
+  .carrito {
+    margin: 0px 20px 0px 20px;
+    background-color: #0be29a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    transition: all 0.2s;
+  }
+
+  .carrito img {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: px;
+    width: 110%;
+    height: 85%;
+  }
+
+  .carrito:link {
+    background-color: #0be29a;
+    box-shadow: none;
+  }
+
+  .carrito:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .productoComprado {
+    background: linear-gradient(90deg, #00b377 0%, #48ffc2 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #7decc7;
+    color: black;
+  }
+
+  .productoQuitado {
+    background: linear-gradient(90deg, #b90000 0%, #ff4646 100%);
+    text-shadow: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #8d0000;
+    color: black;
+  }
+
+  .cantidadProductos {
+    font-weight: bolder;
+  }
+
+  .cantidadBoton {
+    font-size: 13px;
+    position: absolute;
+    color: white;
+    padding: 0px 6px 0px 6px;
+    border-radius: 8px;
+    background: rgb(83, 83, 83);
+  }
+
+  .offcanvas {
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .btnQuitar {
+    margin: 20px;
+    transition: all 0.2s;
+  }
+
+  .btnQuitar:hover {
+    scale: 1.05;
+  }
+
+  .alertComprar {
+    color: white;
+    padding: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(34, 34, 34) 0%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+
+  .btnAgregar {
+    font-size: 1.2vw;
+  }
+
+  .productoCarrito {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 25px;
+    border: dashed #929292;
+  }
+
+  #inputBuscar {
+    width: 20%;
+    padding: 9px;
+  }
+
+  .filtrarPorCategoria {
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+
+  #filtroCategoria {
+    margin-left: 8px;
+    font-size: 1vw;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .card {
+    width: calc(20% - 10px);
+    margin: 10px;
+    padding: 15px;
+    background: linear-gradient(
+      90deg,
+      rgb(77, 77, 77) 0%,
+      rgb(92, 92, 92) 100%
+    );
+    border: 1px solid #0be29a;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  button {
+    background-color: #0be29a;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background-color: #7decc7;
+    scale: 1.05;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .precio {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    border: 2px solid rgb(127, 255, 212, 0.2);
+  }
+
+  .categoria {
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 1.3vw;
+  }
+
+  .specsProducto {
+    font-size: 1vw;
+  }
+}
