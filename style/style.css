@@ -55,6 +55,15 @@ span {
   display: flex;
   align-items: center;
   flex-direction: row;
+  border-radius: 30px;
+  background: linear-gradient(180deg, aquamarine 0%, rgb(83, 175, 143) 100%);
+  border: 1px solid black;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 95%;
 }
 
 .navBar img {
@@ -87,12 +96,13 @@ span {
 }
 
 .carrito:link {
-  background-color: #0be29a;
+  background-color: #474747;
+  border: 2px solid rgb(255, 255, 255);
   box-shadow: none;
 }
 
 .carrito:hover {
-  background-color: #7decc7;
+  background-color: #a1a1a1;
   scale: 1.05;
 }
 
@@ -126,7 +136,8 @@ span {
   color: white;
   padding: 0px 6px 0px 6px;
   border-radius: 8px;
-  background: rgb(83, 83, 83);
+  border: 1px solid aquamarine;
+  background: rgb(75, 153, 127);
 }
 
 .offcanvas {
@@ -167,6 +178,8 @@ span {
 .filtrarPorCategoria {
   margin-left: 20px;
   font-weight: bolder;
+  color: black;
+  text-shadow: none;
 }
 
 #filtroCategoria {
@@ -224,6 +237,40 @@ button:hover {
 
 .specsProducto {
   font-size: 1vw;
+}
+
+footer {
+  border-radius: 50px;
+  background: linear-gradient(180deg, aquamarine 0%, rgb(63, 133, 109) 100%);
+  border: 1px solid black;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 90%;
+}
+footer a img {
+  transition: all 200ms ease-in-out;
+}
+footer a img:hover {
+  transform: scale(1.4);
+}
+footer .display-6 {
+  font-weight: bolder;
+  transition: all 200ms ease-in-out;
+  padding: 10px;
+  border-radius: 0.5cm;
+  color: black;
+  text-decoration: none;
+}
+footer .display-6:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: rgb(24, 100, 77);
+}
+footer .text-light:hover {
+  transform: scale(1.5);
 }
 
 /*TABLETS*/
