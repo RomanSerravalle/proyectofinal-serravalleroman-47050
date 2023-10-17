@@ -29,7 +29,6 @@ class BaseDeDatos {
   async cargarProductos() {
     const response = await fetch("json/productos.json");
     this.productos = await response.json();
-    console.log("Productos en JSON:", this.productos);
     cargarCatalogo(this.productos);
   }
 
