@@ -105,7 +105,7 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
-  width: 95%;
+  width: 85%;
 }
 
 .busquedaCarrito img {
@@ -414,6 +414,10 @@ footer .text-light:hover {
     padding: 9px;
   }
 
+  .busquedaCarrito {
+    width: 90%;
+  }
+
   .carrito img {
     text-align: center;
     margin-top: 5px;
@@ -473,6 +477,11 @@ footer .text-light:hover {
 
   #inputBuscar {
     width: 35%;
+    padding: 5px;
+  }
+
+  .busquedaCarrito {
+    width: 95%;
     padding: 5px;
   }
 
