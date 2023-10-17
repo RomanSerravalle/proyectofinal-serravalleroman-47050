@@ -13,7 +13,7 @@ h1 {
   font-size: 50px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   font-weight: bolder;
   animation: animColor 2s linear infinite;
 }
@@ -50,7 +50,49 @@ span {
   width: 100%;
 }
 
-.navBar {
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(24, 100, 77) 0%,
+    rgb(161, 255, 227) 61%,
+    rgb(161, 255, 227) 90%
+  );
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  text-shadow: none;
+}
+header img {
+  width: 150px;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 10px 10px 20px 20px;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-link {
+  border-radius: 0.2cm;
+}
+.nav-link:hover {
+  background-color: rgb(201, 255, 239, 50%);
+  transition: 300ms ease;
+}
+
+.active:hover {
+  color: rgb(161, 255, 227);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 58, 39);
+}
+
+.busquedaCarrito {
   text-align: center;
   display: flex;
   align-items: center;
@@ -62,16 +104,16 @@ span {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 15px;
   width: 95%;
 }
 
-.navBar img {
+.busquedaCarrito img {
   height: 15%;
   width: 15%;
 }
 
-.navBar p {
+.busquedaCarrito p {
   position: absolute;
   background: red;
 }
@@ -189,6 +231,11 @@ span {
   border-radius: 5px;
 }
 
+option:checked {
+  background-color: rgb(84, 168, 140);
+  color: rgb(255, 255, 255);
+}
+
 .card {
   width: calc(20% - 10px);
   margin: 10px;
@@ -237,6 +284,80 @@ button:hover {
 
 .specsProducto {
   font-size: 1vw;
+}
+
+.carousel-inner {
+  border-radius: 0.5cm;
+  border: 4px solid rgb(161, 255, 227);
+  margin-bottom: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.carousel-item h5 {
+  font-size: 2rem;
+  text-shadow: 5px 10px 5px black;
+}
+
+.serviciosHeader {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  font-size: 4vw;
+}
+
+.serviciosImg {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 4px solid rgb(161, 255, 227);
+  border-radius: 10px;
+}
+
+.infoTexto p {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 95%;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 576px) {
+  .infoTexto p {
+    font-size: 2.5rem;
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .infoTexto p {
+    width: 70%;
+    font-size: 1.7rem;
+    margin-bottom: 48px;
+  }
+}
+.infoTexto h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.infoTexto h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.infoMapa {
+  height: 60vh;
+  width: 50vw;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid rgb(161, 255, 227);
+  border-radius: 1cm;
+}
+
+.infoAcercate {
+  font-size: 3vw;
 }
 
 footer {
@@ -324,6 +445,14 @@ footer .text-light:hover {
   .specsProducto {
     font-size: 18px;
   }
+
+  .serviciosHeader {
+    font-size: 5vw;
+  }
+
+  .infoMapa {
+    width: 60vw;
+  }
 }
 
 /*MOVILES*/
@@ -386,5 +515,26 @@ footer .text-light:hover {
 
   .specsProducto {
     font-size: 4vw;
+  }
+
+  .alertComprar {
+    font-size: 5vw;
+  }
+
+  .serviciosHeader {
+    font-size: 6.5vw;
+  }
+  .infoTexto p {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .infoMapa {
+    height: 30vh;
+    width: 70vw;
+  }
+
+  .infoAcercate {
+    font-size: 10vw;
   }
 }

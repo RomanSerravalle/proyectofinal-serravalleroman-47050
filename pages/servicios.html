@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="computación, gaming, computadora, armado, pc, componentes, periféricos"
+    />
+    <meta
+      name="description"
+      content="¡Los servicios que ofrecemos en Velen Computación! Armado de PC, venta de productos y mucho más."
+    />
+    <meta name="keywords" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Velen - Servicios</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../img/velen-favicon.png"
+    />
+  </head>
+
+  <!-- NAVBAR -->
+
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              class="img-fluid"
+              src="../img/velen-logo-white.png"
+              alt="Logo de Velen en blanco"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Tienda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacion.html">Información</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Los servicios que ofrecemos</h1>
+    </main>
+
+    <!-- CAROUSEL -->
+
+    <section data-aos="zoom-in" class="container-fluid px-wide p-3">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/gpu.jpg"
+              class="d-block w-100"
+              alt="Imagen de tarjeta gráfica"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                Venta de componentes y periféricos (Tarjetas gráficas,
+                procesadores, teclados, headsets, etc)
+              </h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/pcgamer-tech.jpg"
+              class="d-block w-100"
+              alt="Setup gamer"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Servicio técnico y reparación de PC de todo tipo</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/pcgamer-build.jfif"
+              class="d-block w-100"
+              alt="PC gamer de alta gama"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                Armado de PC gamer personalizado, de todas las gamas disponibles
+              </h5>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID IMAGENES -->
+
+    <h2 class="serviciosHeader">¡Y mucho más en nuestro local!</h2>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="serviciosImg col-11 col-lg-5 col-md-5 col-sm-11 mx-50 px-0">
+          <img
+            class="img-fluid rounded"
+            src="../img/store-firstimage.png"
+            alt="Foto de estanterías en el local de Velen"
+          />
+        </div>
+        <div class="serviciosImg col-11 col-lg-5 col-md-5 col-sm-11 px-0">
+          <img
+            class="img-fluid rounded"
+            src="../img/store-secondimage.png"
+            alt="Foto de estanterías en el local de Velen"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="serviciosImg col-11 col-lg-11 col-md-11 col-sm-11 px-0">
+          <img
+            class="img-fluid rounded"
+            src="../img/store-thirdimage.png"
+            alt="Foto amplia de productos en el local de Velen"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER-->
+
+    <section class="container-fluid">
+      <footer class="text-center text-white" style="background-color: #f1f1f1">
+        <h2 class="text-dark display-5">Nuestras redes</h2>
+        <div class="container pt-4">
+          <section class="mb-4">
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="http://www.facebook.com"
+              target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+              ><img src="../img/facebook-icon.svg" alt="Icono de Facebook"
+            /></a>
+
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="http://www.twitter.com"
+              target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+              ><img src="../img/twitter-icon.svg" alt="Icono de Twitter"
+            /></a>
+
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="http://www.whatsapp.com"
+              target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-whatsapp"></i
+              ><img src="../img/whatsapp-icon.svg" alt="Icono de Whatsapp"
+            /></a>
+
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.instagram.com"
+              target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+              ><img src="../img/instagram-icon.svg" alt="Icono de Instagram"
+            /></a>
+          </section>
+        </div>
+
+        <div>
+          <a class="display-6" href="#">Arriba</a>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

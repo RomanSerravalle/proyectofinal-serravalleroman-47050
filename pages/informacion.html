@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="keywords"
+      content="computación, gaming, computadora, procesador, memoria, local computación, servicio técnico"
+    />
+    <meta
+      name="description"
+      content="Información sobre nuestro emprendimiento, Velen Computación. ¡Encontrá nuestro local en Thames 677, CABA!"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,21 +24,25 @@
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
 
-    <link rel="stylesheet" href="./style/style.css" />
-
-    <title>Velen Computación</title>
-    <link rel="icon" type="image/x-icon" href="img/velen-favicon.png" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Velen - Información</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../img/velen-favicon.png"
+    />
   </head>
+
   <body>
-    <!-- NAVBAR  -->
+    <!-- NAVBAR -->
 
     <header id="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
+          <a class="navbar-brand" href="/index.html"
             ><img
               class="img-fluid"
-              src="./img/velen-logo-white.png"
+              src="../img/velen-logo-white.png"
               alt="Logo de Velen en blanco"
           /></a>
           <button
@@ -47,15 +59,15 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="/index.html"
                   >Tienda</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/informacion.html"
+                <a class="nav-link active" href="informacion.html"
                   >Información</a
                 >
               </li>
@@ -64,68 +76,48 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1>¡Bienvenido a Velen Computación!</h1>
 
-      <div class="busquedaCarrito">
-        <input id="inputBuscar" type="text" placeholder="Buscar productos..." />
-        <div class="filtrarPorCategoria">
-          <label for="filtroCategoria">Filtrar por categoría:</label>
-          <select id="filtroCategoria">
-            <option value="Todos">Todos los productos</option>
-            <option value="Tarjeta gráfica">Tarjeta gráfica</option>
-            <option value="CPU">CPU</option>
-            <option value="Memoria RAM">Memoria RAM</option>
-          </select>
-        </div>
-        <a
-          class="carrito btn btn-primary ms-auto"
-          data-bs-toggle="offcanvas"
-          href="#offcanvasExample"
-          role="button"
-          aria-controls="offcanvasExample"
-        >
-          <span class="cantidadProductos cantidadBoton"> 0</span>
-          <img src="img/carrito.png" alt="" />
-        </a>
-      </div>
-
-      <!-- CATÁLOGO -->
-
-      <div id="productos"></div>
+    <main class="infoMain">
+      <h1>¿Querés saber más sobre nosotros?</h1>
     </main>
 
-    <!-- CARRITO -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          Carrito de compras
-        </h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <section>
-          <h3>
-            Productos en carrito: <span class="cantidadProductos"> 0</span>
-          </h3>
-          <div id="carrito"></div>
-          <h3>Total: $ <span id="totalCarrito">0</span></h3>
-          <button id="btnComprarCarrito">Comprar</button>
-        </section>
-      </div>
-    </div>
+    <section class="infoTexto">
+      <p>
+        En <span>Velen Computación</span>, somos una pequeña empresa familiar.
+        Nos dedicamos al rubro de la tecnología hace más de 10 años. Nos
+        especializamos en el apartado de la computación y la informática.
+      </p>
+
+      <p>
+        En nuestra plantilla nos valemos de varios especialistas tanto en
+        software como en hardware, con el conocimiento necesario para solventar
+        todas las necesidades y problemas técnicos posibles en computadoras de
+        escritorio, ya sean gamer o de oficina.
+      </p>
+
+      <p>
+        Recientemente también contamos con una gran variedad de productos de
+        hardware a la venta en nuestro local, de todas las gamas y a precios
+        accesibles.
+      </p>
+
+      <h2 class="infoAcercate">¡Acercate!</h2>
+    </section>
+
+    <!-- MAPA -->
+
+    <iframe
+      class="infoMapa"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.568287175513!2d-58.441035!3d-34.594246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f55a6ab71b%3A0x53ec9f17d11ea1aa!2sThames%20677%2C%20C1414DCM%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1674932044051!5m2!1ses!2sus"
+      width="750"
+      height="540"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
     <!-- FOOTER -->
+
     <section class="container-fluid">
       <footer class="text-center text-white" style="background-color: #f1f1f1">
         <h2 class="text-dark display-5">Nuestras redes</h2>
@@ -138,7 +130,7 @@
               role="button"
               data-mdb-ripple-color="dark"
               ><i class="fab fa-facebook-f"></i
-              ><img src="./img/facebook-icon.svg" alt="Icono de Facebook"
+              ><img src="../img/facebook-icon.svg" alt="Icono de Facebook"
             /></a>
 
             <a
@@ -148,7 +140,7 @@
               role="button"
               data-mdb-ripple-color="dark"
               ><i class="fab fa-twitter"></i
-              ><img src="./img/twitter-icon.svg" alt="Icono de Twitter"
+              ><img src="../img/twitter-icon.svg" alt="Icono de Twitter"
             /></a>
 
             <a
@@ -158,7 +150,7 @@
               role="button"
               data-mdb-ripple-color="dark"
               ><i class="fab fa-whatsapp"></i
-              ><img src="./img/whatsapp-icon.svg" alt="Icono de Whatsapp"
+              ><img src="../img/whatsapp-icon.svg" alt="Icono de Whatsapp"
             /></a>
 
             <a
@@ -168,28 +160,21 @@
               role="button"
               data-mdb-ripple-color="dark"
               ><i class="fab fa-instagram"></i
-              ><img src="./img/instagram-icon.svg" alt="Icono de Instagram"
+              ><img src="../img/instagram-icon.svg" alt="Icono de Instagram"
             /></a>
           </section>
         </div>
 
         <div>
-          <a class="display-6" href="#">Arriba</a>
+          <a class="display-6" href="#header">Arriba</a>
         </div>
       </footer>
     </section>
 
-    <!-- SCRIPTS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="js/app.js"></script>
   </body>
 </html>
